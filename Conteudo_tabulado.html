@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<!--Tag "table" Tabela simples com cabeçalho-->
+<table>
+
+	<tr> <!--Tag "tr" linhas-->
+		<th>First name</th><!--Tag "th" definir o cabeçalho da tabela-->
+		<th>last name</th>
+	</tr>
+
+	<tr>
+		<td>John</td><!--Tag "td" colunas-->
+		<td>Doe</td>
+	</tr>
+	
+	<tr>
+		<td>Jane</td>
+		<td>Doe</td>
+	</tr>
+
+</table>
+
+<!--Tabela completa. Cabeça, corpo e pé-->
+
+<table>
+	
+	<colgroup><!--Agrupar e dar estilo as colunas-->
+		<col span="1" style="background-color: #0f0">
+		<col span="1" style="background-color: yellow">
+	</colgroup>
+
+  <thead>
+
+    <tr>
+      <th>Header content 1</th>
+      <th>Header content 2</th>
+    </tr>
+
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>Body content 1</td>
+      <td>Body content 2</td>
+    </tr>
+  </tbody>
+
+  <tfoot>
+    <tr>
+      <td>Footer content 1</td>
+      <td>Footer content 2</td>
+    </tr>
+  </tfoot>
+</table>
+<br>
+
+<!---Tabela com colgroup e col-->
+<table>
+<caption>Awesome caption</caption>
+
+  <colgroup>
+    <col span="3" style="background-color: #0f0">
+    <col span="0">
+  </colgroup>
+
+  <tr>
+    <th>Lime</th>
+    <th>Lemon</th>
+    <th>Orange</th>
+  </tr>
+
+  <tr>
+    <td>Green</td>
+    <td>Yellow</td>
+    <td>Orange</td>
+  </tr>
+
+</table>
+
+
+<table>
+<!--Tag "caption" para colocar legenda na tabela-->
+  <tr>
+    <td>Awesome data</td>
+  </tr>
+
+</table>
+
+</body>
+</html>

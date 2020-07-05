@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title></title>
+</head>
+<body>
+
+<!-- Form which will send a GET request to the current URL (a requisição aparece na url)-->
+
+<form>
+  <label>Name:
+    <input name="submitted-name" autocomplete="name">
+    <input type="text" name="Curso">
+  </label>
+  <button>Save</button>
+</form>
+
+<br>
+
+<form action="#" method="GET">
+  <label for="GET-name">Name:</label>
+    <input id="GET-name" type="text" name="name">
+    <input type="text" name="curso">
+    <input type="submit" value="Save">
+</form>
+
+<!-- Form which will send a POST request to the current URL (a requisição não aparece na url mais seguro)-->
+<form action="#" method="post">
+  <label>Name:
+    <input name="submitted-name" autocomplete="name">
+  </label>
+  <button>Save</button>
+</form>
+
+<form action="#" method="POST">
+  <label for="name">Name:</label>
+    <input id="name" type="text" name="name">
+    <input type="text" name="curso">
+    <input type="submit" value="Save">
+</form>
+
+
+<form action="#" method="PUT">
+  <label>Name:
+    <input name="submitted-name" autocomplete="name">
+  </label>
+  <button>Save</button>
+</form>
+
+
+<form action="#" method="DELETE">
+  <label>Name:
+    <input name="submitted-name" autocomplete="name">
+  </label>
+  <button>Save</button>
+</form>
+
+GET = Recuperar informações do servidor
+POST = Criar novas informações
+PUT = Atualizar informações
+DELETE = Deletar informações
+
+<br><br>
+
+<caption>Cadastre o produto</caption>
+
+<form action="#" method="POST">
+  <label for="name">Código:</label>
+    <input id="name" type="text" name="codigo">
+
+    <label for="name">Descrição:</label>
+    <input id="name" type="text" name="descricao">
+
+    <label for="name">Preço:</label>
+    <input id="name" type="text" name="preco">
+    
+    <input type="submit" value="Save">
+</form>
+
+<br><br>
+
+<caption>Altere algum produto cadastrado</caption>
+
+<form action="#" method="POST">
+  <label for="name">Código:</label>
+    <input id="name" type="text" name="codigo">
+
+    <label for="name">Descrição:</label>
+    <input id="name" type="text" name="descricao">
+
+    <label for="name">Preço:</label>
+    <input id="name" type="text" name="preco">
+    
+    <input type="submit" value="Save">
+</form>
+
+<br><br>
+
+<caption>Delete algum produto</caption>
+
+<form action="#" method="POST">
+  <label for="name">Código:</label>
+    <input id="name" type="text" name="codigo">
+    <input type="submit" value="Save">
+</body>
+</html>

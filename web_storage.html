@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!--"localStorage" para armazenar informações que permanecem no navegador do usuário sempre(removido com limpeza de cookies)-->
+	<!--"sessionStorage" para armazenar informações que permanecem no navegador do usuário até ele fechar o navegador-->
+	<script type="text/javascript">
+			function salvar(){
+					if (typeof(Storage) !== "undefined") {
+						localStorage.setItem("nome", "Programe Fácil");
+						localStorage.setItem("Projeto", "Desenvolvimento web");
+						sessionStorage.setItem("Projeto", "Desenvolvimento web");
+					} else {
+					atert('Seu navegador não suportacWeb Storage')
+					}
+			}		
+
+			
+			function ler(){
+					if (typeof(Storage) !== "undefined") {
+						document.getElementById("resultado").innerHTML = localStorage.getItem("Projeto");
+					} else {
+					atert('Seu navegador não suportacWeb Storage')
+					}
+			}
+
+						function remover(){
+					if (typeof(Storage) !== "undefined") {
+						localStorage.removeItem("nome");
+					} else {
+					atert('Seu navegador não suportacWeb Storage')
+					}
+			}
+			
+	</script>
+</head>
+<body>
+
+	<div id="resultado"></div>
+
+	<button onclick="salvar()">Salvar</button>
+	<button onclick="ler()">Ler</button>
+	<button onclick="remover()">Remover</button>
+
+</body>
+</html>

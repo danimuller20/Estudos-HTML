@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<!-- Menu de opções quetrabalham com Java Script. -->
+<menu type="toolbar">
+  <li>
+    <button type="menu" menu="file-menu">File</button>
+    <menu type="context" id="file-menu">
+      <menuitem label="New..." onclick="newFile()">
+      <menuitem label="Save..." onclick="saveFile()">
+    </menu>
+  </li>
+  <li>
+    <button type="menu" menu="edit-menu">Edit</button>
+    <menu type="context" id="edit-menu">
+      <menuitem label="Cut..." onclick="cutEdit()">
+      <menuitem label="Copy..." onclick="copyEdit()">
+      <menuitem label="Paste..." onclick="pasteEdit()">
+    </menu>
+  </li>
+</menu>
+
+<br><br>
+<!-- A <div> element with a context menu (clique botão direito do mouse, funcona apenas no firefox) -->
+<div contextmenu="popup-menu">
+  Right-click to see the adjusted context menu
+</div>
+
+<menu type="context" id="popup-menu">
+  <menuitem>Action</menuitem>
+  <menuitem>Another action</menuitem>
+  <hr/>
+  <menuitem>Separated action</menuitem>
+</menu>
+
+</body>
+</html>

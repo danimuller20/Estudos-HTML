@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+
+    <script type="text/javascript">
+         function incrementa(){
+            document.getElementById('nota').value += 10;
+        }
+
+        function decrementa(){
+            document.getElementById('nota').value -= 10;
+        }
+    </script>
+
+</head>
+<body>
+
+<!-- "#" URL sega-->
+<form method="GET" action="#">
+
+    <fieldset><!--"radio" botão para marcação escolha unica-->
+        <legend>Dados pessoais</legend>
+        <input type="radio" id="radio" name="click"> 
+        <input type="radio" id="radio2" name="click"> 
+        <label for="radio">Clique aqui</label>
+
+        <input type="text" name="nome" placeholder="Digite seu nome aqui">
+    </fieldset>
+</form>
+
+    <caption> Escolha uma das opções</caption>
+<br>
+    <input list="browsers"/>
+    <!--Tag "daralist" para criar uma lista de opções-->
+    <datalist id="browsers">
+        <option value="Chrome">
+        <option value="Firefox">
+        <option value="Internet Explorer">
+        <option value="Internet Explorer 2">
+        <option value="Opera">
+        <option value="Safari">
+        <option value="Microsoft Edge">
+    </datalist>
+    <button type="submit">Enviar</button> <!--Criação de botão-->
+
+<br><br>
+    <!--"select" = campo de seleção de opções-->
+    <select name="select">
+      <option value="valor1">Valor 1</option>
+      <option value="valor2" selected>Valor 2</option>
+      <option value="valor3">Valor 3</option>
+    </select>
+
+	<button type="submit">Enviar</button> <!--Criação de botão-->
+
+    <br><br>
+    <textarea name="textarea" rows="10" cols="50">Write something here</textarea>
+    <button type="submit">Enviar</button>
+
+    <br><br>
+<!--"output" representar o resultado de um cálculo-->
+    0<input type="range" name="b" value="50" />100 + <input type="nunber" name="a" value="10"/>=
+    <output name="result" ></output>
+
+    <button type="submit">Enviar</button>
+
+    <br><br>
+
+    <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+      0<input type="range" id="b" name="b" value="50" />100 +
+      <input type="number" id="a" name="a" value="10" /> =
+      <output name="result" for="a b">60</output>
+      <button type="submit">Calcular</button>
+    </form>
+    
+    <br><br>
+
+<!--eventos (onclick, onmouseover, etc-->
+<progress value="70" max="100" id="nota">70 %</progress>
+<button onclick="incrementa()">Incrementa</button>
+<button onclick="decrementa()">Decrementa</button>
+
+<button type="submit">Enviar</button>
+
+<form>
+<br><br>
+<!--"checkbox" botões para marcações multiplas-->
+    <input type="checkbox" name="my_checkbox">
+    <input type="checkbox" name="my_checkbox2">
+    <input type="color" name="color">
+    <input type="date" name="date">
+    <input type="datetime" name="datetime">
+    <button type="submit">Enviar</button>
+
+
+<br><br>
+<input type="datetime-local" name="daytime">
+<br>
+<input type="file" name="img">
+<button type="submit">Enviar</button>
+
+<br>
+
+<input type="month" name="bdaymonth">
+<br>
+
+<input type="password" name="pwd">
+<button type="submit">Enviar</button>
+<br><br>
+
+<input type="range" name="points">
+<button type="submit">Enviar</button>
+<br><br>
+
+    E-mail: <input type="email" name="usremail" required="">
+    <input type="reset">
+    <button type="submit">Enviar</button>
+</form>
+
+</body>
+</html>
